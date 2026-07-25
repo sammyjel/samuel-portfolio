@@ -1,0 +1,1457 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Samuel Ijeluola · IT Support Engineer &amp; Educator</title>
+<meta name="description" content="Samuel Olorunfemi Ijeluola, IT Support Engineer and TEFL-certified English educator. 13+ years across banking IT and international schools. Certified Scrum Master, now training toward cloud and AI.">
+<meta name="theme-color" content="#FBF7F0">
+<meta property="og:title" content="Samuel Ijeluola · IT Support Engineer &amp; Educator">
+<meta property="og:description" content="IT support · English-language education · Agile / Scrum. 13+ years keeping systems running and teaching, across banking and international schools.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://samuel-ijeluola.netlify.app/assets/samuel.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" as="image" href="assets/samuel.jpg" fetchpriority="high">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230C0B0A'/><text x='50' y='68' font-size='52' font-family='Georgia,serif' font-weight='700' fill='%23F2A93B' text-anchor='middle'>SI</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   TOKENS
+   ============================================================ */
+:root{
+  --ink:#0C0B0A;
+  --ink-2:#3A352E;
+  --ink-3:#6B6459;
+  --paper:#FBF7F0;
+  --paper-2:#F4EDE1;
+  --card:#FFFFFF;
+  --line:#E3D9C8;
+  --amber:#E8951F;
+  --amber-soft:#FBE7C6;
+  --teal:#0F4C4A;
+  --shadow-sm:0 1px 2px rgba(12,11,10,.06), 0 4px 14px rgba(12,11,10,.05);
+  --shadow-md:0 2px 6px rgba(12,11,10,.07), 0 18px 44px rgba(12,11,10,.09);
+  --shadow-lg:0 30px 90px rgba(12,11,10,.18);
+  --r-sm:10px; --r-md:16px; --r-lg:26px; --r-pill:999px;
+  --display:"Archivo", ui-sans-serif, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --serif:"Instrument Serif", Georgia, "Times New Roman", serif;
+  --maxw:1240px;
+  --nav-h:68px;
+  --ease:cubic-bezier(.22,.9,.28,1);
+}
+html[data-theme="dark"]{
+  --ink:#F6F1E8;
+  --ink-2:#CFC6B8;
+  --ink-3:#9A9184;
+  --paper:#0D0C0B;
+  --paper-2:#141210;
+  --card:#171512;
+  --line:#2C2721;
+  --amber:#F2A93B;
+  --amber-soft:#3A2B12;
+  --teal:#5FCFC5;
+  --shadow-sm:0 1px 2px rgba(0,0,0,.4), 0 4px 14px rgba(0,0,0,.3);
+  --shadow-md:0 2px 6px rgba(0,0,0,.45), 0 18px 44px rgba(0,0,0,.5);
+  --shadow-lg:0 30px 90px rgba(0,0,0,.7);
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%; scroll-behavior:smooth; scroll-padding-top:calc(var(--nav-h) + 24px)}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:var(--display); font-size:16px; line-height:1.6;
+  -webkit-font-smoothing:antialiased; overflow-x:hidden;
+  transition:background .4s var(--ease), color .4s var(--ease);
+}
+img{max-width:100%; display:block}
+a{color:inherit; text-decoration:none}
+button{font:inherit; color:inherit; border:0; background:none; cursor:pointer}
+::selection{background:var(--amber); color:#0C0B0A}
+:focus-visible{outline:2px solid var(--amber); outline-offset:3px; border-radius:6px}
+
+.wrap{width:100%; max-width:var(--maxw); margin-inline:auto; padding-inline:24px}
+@media (max-width:640px){ .wrap{padding-inline:18px} }
+
+/* ============================================================
+   TYPE SCALE
+   ============================================================ */
+.eyebrow{
+  font-size:11px; font-weight:700; letter-spacing:.16em; text-transform:uppercase;
+  color:var(--ink-3); display:flex; align-items:center; gap:10px;
+}
+.eyebrow::before{content:""; width:22px; height:1px; background:var(--amber)}
+h1,h2,h3,h4{margin:0; line-height:1.02; letter-spacing:-.035em; font-weight:900}
+.h-mega{font-size:clamp(3.2rem, 11.5vw, 9.5rem); text-transform:uppercase}
+.h-sec{font-size:clamp(2.1rem, 5.2vw, 3.9rem); letter-spacing:-.04em}
+.h-card{font-size:1.28rem; font-weight:800; letter-spacing:-.02em; line-height:1.2}
+.lede{font-size:clamp(1rem,1.6vw,1.16rem); color:var(--ink-2); line-height:1.65; font-weight:400}
+.serif-i{font-family:var(--serif); font-style:italic; font-weight:400; letter-spacing:-.01em; text-transform:none}
+
+/* ============================================================
+   BUTTONS
+   ============================================================ */
+.btn{
+  display:inline-flex; align-items:center; justify-content:center; gap:9px;
+  padding:14px 26px; border-radius:var(--r-pill); font-weight:700; font-size:.93rem;
+  letter-spacing:-.01em; position:relative; overflow:hidden; white-space:nowrap;
+  transition:transform .35s var(--ease), box-shadow .35s var(--ease), background .3s, color .3s, border-color .3s;
+}
+.btn-primary{background:var(--ink); color:var(--paper); box-shadow:var(--shadow-md)}
+.btn-primary:hover{transform:translateY(-2px); box-shadow:0 16px 40px rgba(12,11,10,.28)}
+.btn-accent{background:var(--amber); color:#160F03; box-shadow:0 10px 30px rgba(232,149,31,.35)}
+.btn-accent:hover{transform:translateY(-2px); box-shadow:0 18px 44px rgba(232,149,31,.45)}
+.btn-ghost{border:1.5px solid var(--line); color:var(--ink); background:transparent}
+.btn-ghost:hover{border-color:var(--ink); transform:translateY(-2px)}
+.btn .arw{transition:transform .35s var(--ease)}
+.btn:hover .arw{transform:translateX(4px)}
+
+/* ============================================================
+   NAV
+   ============================================================ */
+.nav{
+  position:fixed; inset:0 0 auto 0; height:var(--nav-h); z-index:120;
+  display:flex; align-items:center;
+  background:color-mix(in srgb, var(--paper) 78%, transparent);
+  backdrop-filter:saturate(180%) blur(18px); -webkit-backdrop-filter:saturate(180%) blur(18px);
+  border-bottom:1px solid transparent; transition:border-color .3s, background .3s;
+}
+.nav.stuck{border-bottom-color:var(--line)}
+.nav .wrap{display:flex; align-items:center; justify-content:space-between; gap:20px}
+.brand{font-family:var(--serif); font-style:italic; font-size:1.42rem; letter-spacing:-.02em; white-space:nowrap}
+.brand b{font-style:normal; font-family:var(--display); font-weight:900; letter-spacing:-.04em}
+.navlinks{display:flex; gap:4px; align-items:center}
+.navlinks a{
+  padding:9px 15px; border-radius:var(--r-pill); font-size:.9rem; font-weight:600; color:var(--ink-2);
+  transition:color .25s, background .25s;
+}
+.navlinks a:hover, .navlinks a.active{color:var(--ink); background:var(--paper-2)}
+.navtools{display:flex; align-items:center; gap:10px}
+.icon-btn{
+  width:38px; height:38px; border-radius:var(--r-pill); border:1.5px solid var(--line);
+  display:grid; place-items:center; transition:border-color .25s, transform .25s var(--ease), background .25s;
+}
+.icon-btn:hover{border-color:var(--ink); transform:translateY(-1px)}
+.icon-btn svg{width:17px; height:17px; fill:none; stroke:currentColor; stroke-width:1.9; stroke-linecap:round; stroke-linejoin:round}
+html[data-theme="dark"] .sun{display:none}
+html:not([data-theme="dark"]) .moon{display:none}
+.nav .btn{padding:11px 22px; font-size:.88rem}
+.burger{display:none}
+@media (max-width:900px){
+  .navlinks{display:none}
+  .burger{display:grid}
+  .nav .btn-primary{display:none}
+}
+
+/* mobile drawer */
+.drawer{
+  position:fixed; inset:0; z-index:130; background:var(--paper);
+  transform:translateY(-100%); transition:transform .55s var(--ease);
+  display:flex; flex-direction:column; padding:calc(var(--nav-h) + 20px) 24px 32px;
+}
+.drawer.open{transform:translateY(0)}
+.drawer a{font-size:2.4rem; font-weight:900; letter-spacing:-.04em; padding:14px 0; border-bottom:1px solid var(--line)}
+.drawer .close{position:absolute; top:15px; right:22px}
+
+/* ============================================================
+   TICKER BAR
+   ============================================================ */
+.ticker{
+  margin-top:var(--nav-h); background:var(--amber-soft); border-bottom:1px solid var(--line);
+  padding:11px 0; font-size:.86rem; color:var(--ink-2); text-align:center;
+}
+.ticker b{color:var(--ink)}
+.ticker a{font-weight:700; color:var(--ink); border-bottom:1.5px solid var(--amber)}
+
+/* ============================================================
+   HERO
+   ============================================================ */
+.hero{position:relative; padding:clamp(40px,7vw,80px) 0 clamp(48px,6vw,72px); overflow:hidden}
+.hero-glow{
+  position:absolute; left:50%; top:-10%; width:min(1100px,120vw); aspect-ratio:1;
+  transform:translateX(-50%); pointer-events:none; z-index:0;
+  background:
+    radial-gradient(closest-side, color-mix(in srgb,var(--amber) 26%, transparent), transparent 72%),
+    radial-gradient(closest-side at 30% 60%, color-mix(in srgb,var(--teal) 14%, transparent), transparent 70%);
+  filter:blur(10px);
+  animation:breathe 11s ease-in-out infinite;
+}
+@keyframes breathe{0%,100%{transform:translateX(-50%) scale(1)}50%{transform:translateX(-50%) scale(1.09)}}
+
+/* faint grid */
+.hero-grid{
+  position:absolute; inset:0; z-index:0; pointer-events:none; opacity:.5;
+  background-image:linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px);
+  background-size:74px 74px;
+  mask-image:radial-gradient(closest-side at 50% 35%, #000 20%, transparent 78%);
+  -webkit-mask-image:radial-gradient(closest-side at 50% 35%, #000 20%, transparent 78%);
+}
+
+.hero-inner{position:relative; z-index:2}
+.hero-status{
+  display:inline-flex; align-items:center; gap:9px; padding:9px 18px; border-radius:var(--r-pill);
+  background:var(--card); border:1px solid var(--line); box-shadow:var(--shadow-sm);
+  font-size:.82rem; font-weight:600; color:var(--ink-2);
+}
+.dot{width:8px; height:8px; border-radius:50%; background:var(--amber); position:relative}
+.dot::after{content:""; position:absolute; inset:-5px; border-radius:50%; border:2px solid var(--amber); opacity:.55; animation:ping 2s var(--ease) infinite}
+@keyframes ping{0%{transform:scale(.6);opacity:.7}100%{transform:scale(1.5);opacity:0}}
+
+/* minmax(0,1fr) is load-bearing: a bare 1fr means minmax(auto,1fr), and the
+   min-content width of 9rem type would blow the columns past the container. */
+.hero-stage{
+  position:relative; margin-top:clamp(18px,3vw,30px);
+  display:grid; grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);
+  align-items:end; gap:clamp(10px,1.8vw,28px);
+}
+.hero-name{grid-column:1; text-align:left; min-width:0}
+.hero-role{grid-column:3; text-align:right; min-width:0}
+.hero-name .h-mega, .hero-role .h-mega{line-height:.87; hyphens:none}
+/* sized so each column actually fits its third of the container */
+.hero-name .h-mega{font-size:clamp(2.4rem,5.4vw,4.6rem)}
+.hero-role .h-mega{font-size:clamp(1.5rem,3.3vw,3rem)}
+.hero-side{
+  max-width:26ch; margin:0 0 18px auto; text-align:right;
+  font-size:.88rem; color:var(--ink-2); line-height:1.55;
+}
+
+/* portrait */
+/* wider than the portrait itself, so the stack chips have room to sit OUTSIDE
+   the frame instead of covering his face */
+.portrait-col{
+  grid-column:2; display:flex; flex-direction:column; align-items:center;
+  position:relative; width:clamp(300px, 40vw, 560px);
+}
+.portrait-wrap{position:relative; display:grid; place-items:center}
+
+/* halo sitting behind the arch */
+.portrait-halo{
+  position:absolute; z-index:0; width:152%; aspect-ratio:1; border-radius:50%; pointer-events:none;
+  background:
+    radial-gradient(closest-side, color-mix(in srgb,var(--amber) 34%, transparent), transparent 68%),
+    radial-gradient(closest-side at 62% 70%, color-mix(in srgb,var(--teal) 20%, transparent), transparent 66%);
+  filter:blur(26px); opacity:.85;
+}
+/* thin arc echoing the frame, adds depth without weight */
+.portrait-arc{
+  position:absolute; z-index:0; width:clamp(258px,31.5vw,410px); aspect-ratio:3/3.4;
+  border-radius:230px 230px 30px 30px; border:1px solid var(--line); pointer-events:none;
+  transform:translateY(-14px);
+}
+
+.portrait{
+  position:relative; z-index:2; width:clamp(220px, 27vw, 350px); aspect-ratio:3/3.4;
+  border-radius:190px 190px 26px 26px; overflow:hidden;
+  background:linear-gradient(165deg, color-mix(in srgb,var(--amber) 24%, var(--paper)), var(--paper-2));
+  box-shadow:var(--shadow-lg); border:1px solid var(--line);
+  transition:transform .6s var(--ease);
+  transform:translate3d(var(--px,0px), var(--py,0px), 0);
+}
+/* Source is a 1:1 square; the frame is taller than wide, so cover fits by height
+   and crops the sides. 49% centres on his face; the slight zoom pushes the head
+   clear of the arch apex and makes him read bolder in the composition. */
+.portrait img{
+  width:100%; height:100%; object-fit:cover;
+  object-position:49% 10%;
+  transform:scale(1.09); transform-origin:50% 24%;
+}
+/* top highlight + bottom scrim: blends the frame into the page so it reads cut-out */
+.portrait::before{
+  content:""; position:absolute; inset:0; z-index:3; pointer-events:none; border-radius:inherit;
+  background:linear-gradient(180deg, rgba(255,255,255,.20), transparent 28%);
+  mix-blend-mode:overlay;
+}
+.portrait::after{
+  content:""; position:absolute; left:0; right:0; bottom:0; height:32%; z-index:3; pointer-events:none;
+  background:linear-gradient(180deg, transparent, color-mix(in srgb,var(--paper) 86%, transparent));
+}
+/* warm rim light down the edges */
+.portrait-rim{
+  position:absolute; inset:0; z-index:4; pointer-events:none; border-radius:inherit;
+  box-shadow:inset 2px 0 22px -8px color-mix(in srgb,var(--amber) 70%, transparent),
+             inset -2px 0 20px -10px color-mix(in srgb,var(--teal) 55%, transparent);
+}
+/* faint grain so the photo doesn't look pasted onto flat colour */
+.portrait-grain{
+  position:absolute; inset:0; z-index:5; pointer-events:none; opacity:.2; border-radius:inherit;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='.42'/%3E%3C/svg%3E");
+  mix-blend-mode:soft-light;
+}
+
+.portrait-fallback{
+  position:absolute; inset:0; z-index:2; display:grid; place-items:center; text-align:center; padding:22px;
+}
+.portrait-fallback .mono{
+  font-family:var(--serif); font-size:clamp(3.4rem,7vw,5.6rem); color:var(--ink); opacity:.9; line-height:1;
+}
+.portrait-fallback small{display:block; margin-top:12px; font-size:.66rem; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-3); line-height:1.9}
+.portrait-fallback code{
+  font-family:ui-monospace, "Cascadia Code", Consolas, monospace; font-size:.7rem; letter-spacing:0;
+  text-transform:none; background:var(--card); border:1px solid var(--line);
+  padding:2px 7px; border-radius:6px; color:var(--ink-2);
+}
+/* once the real photo loads, the placeholder scaffolding steps aside */
+.portrait-wrap.has-photo .portrait-fallback{display:none}
+.portrait-wrap.has-photo .portrait{background:var(--paper-2)}
+
+/* floating stack chips */
+.chip{
+  position:absolute; z-index:3; display:inline-flex; align-items:center; gap:7px;
+  padding:8px 15px; border-radius:var(--r-pill); background:var(--card);
+  border:1px solid var(--line); box-shadow:var(--shadow-sm);
+  font-size:.82rem; font-weight:700; letter-spacing:-.01em; white-space:nowrap;
+  animation:float 7s ease-in-out infinite;
+}
+.chip i{width:8px; height:8px; border-radius:2px; background:var(--amber); flex:none}
+.chip.c1{left:0;   top:30%; --d:0s}
+.chip.c2{left:4%;  top:48%; --d:.9s}
+.chip.c3{left:0;   top:66%; --d:1.7s}
+.chip.c4{right:0;  top:28%; --d:.4s}
+.chip.c5{right:4%; top:46%; --d:1.3s}
+.chip.c6{right:0;  top:64%; --d:2.1s}
+.chip{animation-delay:var(--d)}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-13px)}}
+@media (max-width:900px){ .chip{display:none} }
+
+.hero-cta{
+  position:relative; z-index:4; margin-top:clamp(26px,3.4vw,44px);
+  display:flex; flex-wrap:wrap; gap:12px; justify-content:center;
+}
+.hero-scroll{margin-top:22px; text-align:center; font-size:.82rem; color:var(--ink-3); font-weight:600}
+.hero-scroll span{display:inline-block; animation:bob 2.2s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(6px)}}
+
+@media (max-width:900px){
+  .hero-stage{grid-template-columns:1fr; text-align:center}
+  .hero-name,.hero-role{grid-column:1; text-align:center}
+  .portrait-col{grid-column:1; order:-1; margin-bottom:14px}
+  .hero-role .h-mega{font-size:clamp(1.5rem,7vw,2.4rem)}
+  .hero-side{max-width:34ch; text-align:center; margin:0 auto 14px}
+  .hero-cta{margin-top:26px}
+}
+
+/* ============================================================
+   MARQUEE
+   ============================================================ */
+.marquee{
+  border-block:1px solid var(--line); background:var(--paper-2);
+  padding:16px 0; overflow:hidden; --gap:44px;
+}
+.marquee-track{display:flex; gap:var(--gap); width:max-content; animation:slide 34s linear infinite}
+.marquee:hover .marquee-track{animation-play-state:paused}
+@keyframes slide{to{transform:translateX(calc(-50% - var(--gap)/2))}}
+.marquee-item{
+  display:flex; align-items:center; gap:var(--gap); font-size:.88rem; font-weight:700;
+  letter-spacing:.04em; text-transform:uppercase; color:var(--ink-3); white-space:nowrap;
+}
+.marquee-item::after{content:"◆"; color:var(--amber); font-size:.6rem}
+
+/* ============================================================
+   SECTIONS
+   ============================================================ */
+section{position:relative}
+.sec{padding:clamp(72px,10vw,132px) 0}
+.sec-head{max-width:760px; margin-bottom:clamp(34px,5vw,58px)}
+.sec-head .h-sec{margin:16px 0 18px}
+
+/* metrics */
+.metrics{display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:var(--line); border-block:1px solid var(--line)}
+.metric{background:var(--paper); padding:clamp(26px,4vw,44px) clamp(18px,2.4vw,30px)}
+.metric .num{font-size:clamp(2.2rem,4.6vw,3.4rem); font-weight:900; letter-spacing:-.05em; line-height:1}
+.metric .num em{font-style:normal; color:var(--amber)}
+.metric p{margin:10px 0 0; font-size:.88rem; color:var(--ink-3); line-height:1.45}
+@media (max-width:760px){ .metrics{grid-template-columns:repeat(2,1fr)} }
+
+/* service cards */
+.grid-3{display:grid; grid-template-columns:repeat(3,1fr); gap:20px}
+@media (max-width:960px){ .grid-3{grid-template-columns:repeat(2,1fr)} }
+@media (max-width:640px){ .grid-3{grid-template-columns:1fr} }
+.card{
+  background:var(--card); border:1px solid var(--line); border-radius:var(--r-lg);
+  padding:clamp(24px,3vw,34px); position:relative; overflow:hidden;
+  transition:transform .45s var(--ease), box-shadow .45s var(--ease), border-color .45s;
+}
+.card::after{
+  content:""; position:absolute; inset:0; border-radius:inherit; pointer-events:none; opacity:0;
+  background:radial-gradient(420px circle at var(--mx,50%) var(--my,0%), color-mix(in srgb,var(--amber) 16%, transparent), transparent 62%);
+  transition:opacity .45s;
+}
+.card:hover{transform:translateY(-6px); box-shadow:var(--shadow-md); border-color:color-mix(in srgb,var(--amber) 45%, var(--line))}
+.card:hover::after{opacity:1}
+.card .n{font-size:.74rem; font-weight:800; letter-spacing:.16em; color:var(--amber)}
+.card .h-card{margin:14px 0 12px}
+.card p{margin:0; color:var(--ink-2); font-size:.95rem}
+.card ul{margin:16px 0 0; padding:0; list-style:none; display:flex; flex-wrap:wrap; gap:7px}
+.card li{font-size:.76rem; font-weight:600; padding:5px 11px; border-radius:var(--r-pill); background:var(--paper-2); color:var(--ink-3); border:1px solid var(--line)}
+
+/* ============================================================
+   SKILLS & EXPERTISE
+   ============================================================ */
+.skills-sec{background:var(--paper-2); border-block:1px solid var(--line)}
+.skills-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:20px}
+@media (max-width:900px){ .skills-grid{grid-template-columns:1fr} }
+
+.skill{
+  background:var(--card); border:1px solid var(--line); border-radius:var(--r-lg);
+  padding:clamp(24px,3vw,34px); position:relative; overflow:hidden;
+  display:flex; flex-direction:column;
+  transition:transform .45s var(--ease), box-shadow .45s var(--ease), border-color .45s;
+}
+.skill:hover{transform:translateY(-6px); box-shadow:var(--shadow-md); border-color:color-mix(in srgb,var(--amber) 45%, var(--line))}
+/* accent stripe keyed per card */
+.skill::before{content:""; position:absolute; left:0; top:0; bottom:0; width:4px; background:var(--accent,var(--amber))}
+.skill-ico{
+  width:52px; height:52px; border-radius:14px; display:grid; place-items:center; margin-bottom:18px;
+  background:color-mix(in srgb, var(--accent,var(--amber)) 16%, transparent);
+  border:1px solid color-mix(in srgb, var(--accent,var(--amber)) 40%, var(--line));
+}
+.skill-ico svg{width:26px; height:26px; fill:none; stroke:var(--accent,var(--amber)); stroke-width:1.7; stroke-linecap:round; stroke-linejoin:round}
+.skill h3{font-size:1.24rem; font-weight:800; letter-spacing:-.02em}
+.skill .yrs{margin:4px 0 0; flex:none; font-size:.8rem; font-weight:700; letter-spacing:.02em; color:var(--accent,var(--amber))}
+.skill p{margin:12px 0 0; color:var(--ink-2); font-size:.93rem; flex:1}
+/* an in-training card is signalled honestly through design: dashed frame + pill */
+.skill--training{border-style:dashed}
+.skill .tag-train{
+  display:inline-flex; align-items:center; gap:7px; align-self:flex-start; margin-bottom:16px;
+  padding:5px 12px; border-radius:var(--r-pill); font-size:.68rem; font-weight:800;
+  letter-spacing:.12em; text-transform:uppercase; color:var(--accent,var(--amber));
+  background:color-mix(in srgb, var(--accent,var(--amber)) 14%, transparent);
+  border:1px solid color-mix(in srgb, var(--accent,var(--amber)) 40%, var(--line));
+}
+.skill .tag-train::before{content:""; width:7px; height:7px; border-radius:50%; background:var(--accent,var(--amber))}
+
+/* proficiency meter */
+.meter{margin-top:18px}
+.meter-top{display:flex; justify-content:space-between; align-items:baseline; margin-bottom:8px}
+.meter-top b{font-size:.78rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--ink-3)}
+.meter-top span{font-size:.78rem; font-weight:800; color:var(--ink)}
+.meter-rail{height:8px; border-radius:99px; background:var(--paper-2); border:1px solid var(--line); overflow:hidden}
+.meter-fill{
+  height:100%; width:0; border-radius:99px;
+  background:linear-gradient(90deg, color-mix(in srgb,var(--accent,var(--amber)) 55%, var(--paper)), var(--accent,var(--amber)));
+  transition:width 1.2s var(--ease);
+}
+.rv.in .meter-fill{width:var(--lvl,80%)}
+
+.skill ul{margin:18px 0 0; padding:0; list-style:none; display:flex; flex-wrap:wrap; gap:7px}
+.skill li{font-size:.75rem; font-weight:600; padding:5px 11px; border-radius:var(--r-pill); background:var(--paper-2); color:var(--ink-3); border:1px solid var(--line)}
+.skill .cred{
+  margin-top:18px; padding-top:16px; border-top:1px solid var(--line);
+  font-size:.82rem; color:var(--ink-2); display:flex; align-items:center; gap:9px;
+}
+.skill .cred svg{width:16px; height:16px; flex:none; fill:none; stroke:var(--accent,var(--amber)); stroke-width:2; stroke-linecap:round; stroke-linejoin:round}
+.skill .cred b{color:var(--ink); font-weight:700}
+
+/* credentials strip */
+.creds{margin-top:clamp(28px,4vw,44px)}
+.creds-label{font-size:.72rem; font-weight:800; letter-spacing:.18em; text-transform:uppercase; color:var(--ink-3); margin-bottom:16px}
+.creds-row{display:flex; flex-wrap:wrap; gap:10px}
+.cred-badge{
+  display:inline-flex; align-items:center; gap:10px; padding:11px 16px; border-radius:var(--r-pill);
+  background:var(--card); border:1px solid var(--line); box-shadow:var(--shadow-sm);
+  font-size:.85rem; font-weight:600; color:var(--ink);
+  transition:transform .3s var(--ease), border-color .3s;
+}
+.cred-badge:hover{transform:translateY(-2px); border-color:color-mix(in srgb,var(--amber) 50%, var(--line))}
+.cred-badge .tick{width:20px; height:20px; border-radius:50%; display:grid; place-items:center; background:color-mix(in srgb,var(--amber) 20%, transparent); flex:none}
+.cred-badge .tick svg{width:12px; height:12px; fill:none; stroke:var(--amber); stroke-width:2.4; stroke-linecap:round; stroke-linejoin:round}
+.cred-badge small{display:block; font-size:.68rem; font-weight:600; color:var(--ink-3); letter-spacing:.02em}
+.cred-note{margin-top:16px; font-size:.8rem; color:var(--ink-3)}
+
+/* ============================================================
+   FLIPBOOK  ★ the page-flip CV
+   ============================================================ */
+.book-sec{background:var(--paper-2); border-block:1px solid var(--line)}
+.book-shell{display:flex; flex-direction:column; align-items:center}
+.book-stage{
+  perspective:2600px; perspective-origin:50% 42%;
+  width:100%; max-width:980px; margin-inline:auto;
+}
+.book{
+  position:relative; width:100%; aspect-ratio:1.44/1;
+  transform-style:preserve-3d; transition:transform .9s var(--ease);
+  transform:translateX(-25%) rotateX(6deg);
+}
+.book.opened{transform:translateX(0) rotateX(6deg)}
+
+/* the static left-hand "read" stack, gives the book a body to flip onto */
+.book-base{
+  position:absolute; left:0; top:0; width:50%; height:100%;
+  background:var(--card); border:1px solid var(--line); border-right:0;
+  border-radius:12px 0 0 12px; box-shadow:var(--shadow-lg);
+}
+.book-base::before{
+  content:""; position:absolute; inset:0 auto 0 0; width:14px; border-radius:12px 0 0 12px;
+  background:linear-gradient(270deg, transparent, color-mix(in srgb,var(--ink) 9%, transparent));
+}
+/* while the book is shut there is nothing to flip onto, and a stray blank page
+   to the left of the cover just reads as a rendering fault */
+.book:not(.opened) .book-base{opacity:0}
+.book-base{transition:opacity .5s var(--ease) .1s}
+.book:not(.opened) .book-spine{opacity:0; transition:opacity .3s}
+.book-spine{
+  position:absolute; left:calc(50% - 3px); top:0; width:6px; height:100%; z-index:60; pointer-events:none;
+  background:linear-gradient(90deg, color-mix(in srgb,var(--ink) 14%, transparent), transparent 45%, color-mix(in srgb,var(--ink) 14%, transparent));
+}
+
+.leaf{
+  position:absolute; left:50%; top:0; width:50%; height:100%;
+  transform-origin:left center; transform-style:preserve-3d;
+  transition:transform 1s var(--ease);
+  will-change:transform;
+}
+.leaf.flipped{transform:rotateY(-180deg)}
+.face{
+  position:absolute; inset:0; backface-visibility:hidden; -webkit-backface-visibility:hidden;
+  background:var(--card); border:1px solid var(--line);
+  padding:clamp(18px,3.1vw,40px); overflow:hidden;
+  display:flex; flex-direction:column;
+}
+/* .front is the right-hand page; .back lands on the left half once turned */
+.face.front{border-radius:0 12px 12px 0; border-left:0}
+.face.back{transform:rotateY(180deg); border-radius:12px 0 0 12px; border-right:0}
+/* inner-edge (spine) gutter shading */
+.face.front::after{
+  content:""; position:absolute; left:0; top:0; bottom:0; width:26px; pointer-events:none;
+  background:linear-gradient(90deg, color-mix(in srgb,var(--ink) 11%, transparent), transparent);
+}
+.face.back::after{
+  content:""; position:absolute; right:0; top:0; bottom:0; width:26px; pointer-events:none;
+  background:linear-gradient(270deg, color-mix(in srgb,var(--ink) 11%, transparent), transparent);
+}
+
+/* page content */
+.pg-num{position:absolute; bottom:14px; font-size:.68rem; letter-spacing:.16em; color:var(--ink-3); font-weight:700}
+.face.front .pg-num{right:clamp(18px,3.1vw,40px)}
+.face.back .pg-num{left:clamp(18px,3.1vw,40px)}
+.pg-kicker{font-size:.68rem; font-weight:800; letter-spacing:.2em; text-transform:uppercase; color:var(--amber); margin-bottom:12px}
+.pg-title{font-size:clamp(1.15rem,2.3vw,1.85rem); font-weight:900; letter-spacing:-.035em; line-height:1.08; margin:0 0 6px}
+.pg-body{overflow:auto; flex:1; padding-right:6px; margin-top:10px; scrollbar-width:thin}
+.pg-body::-webkit-scrollbar{width:5px}
+.pg-body::-webkit-scrollbar-thumb{background:var(--line); border-radius:99px}
+.pg-body p{margin:0 0 11px; font-size:clamp(.78rem,1.08vw,.93rem); color:var(--ink-2); line-height:1.62}
+
+.job{margin-bottom:clamp(12px,1.7vw,20px)}
+.job h4{font-size:clamp(.85rem,1.2vw,1.02rem); font-weight:800; letter-spacing:-.02em; line-height:1.25}
+.job .meta{font-size:clamp(.68rem,.95vw,.8rem); color:var(--amber); font-weight:700; margin:3px 0 7px}
+.job ul{margin:0; padding-left:16px}
+.job li{font-size:clamp(.72rem,1.02vw,.88rem); color:var(--ink-2); line-height:1.55; margin-bottom:5px}
+
+.kv{display:grid; grid-template-columns:auto 1fr; gap:5px 14px; font-size:clamp(.72rem,1.02vw,.88rem)}
+.kv dt{font-weight:800; color:var(--ink); white-space:nowrap}
+.kv dd{margin:0; color:var(--ink-2)}
+.tagrow{display:flex; flex-wrap:wrap; gap:6px; margin-top:8px}
+.tagrow span{font-size:clamp(.64rem,.9vw,.76rem); font-weight:600; padding:4px 10px; border-radius:var(--r-pill); background:var(--paper-2); border:1px solid var(--line); color:var(--ink-2)}
+
+/* cover face */
+.cover{
+  background:linear-gradient(155deg, var(--ink) 0%, #241E16 58%, #3A2C16 100%);
+  color:#FBF7F0; justify-content:space-between; border-color:var(--ink);
+}
+.cover .pg-title{color:#FBF7F0; font-size:clamp(1.5rem,3.2vw,2.6rem)}
+.cover .pg-kicker{color:var(--amber)}
+.cover p{color:#CFC6B8}
+.cover .seal{
+  width:clamp(52px,6vw,74px); aspect-ratio:1; border-radius:50%; border:1.5px solid var(--amber);
+  display:grid; place-items:center; font-family:var(--serif); font-size:clamp(1.2rem,2.4vw,1.7rem); color:var(--amber);
+}
+
+/* book controls */
+.book-ctrl{
+  display:flex; align-items:center; justify-content:center; flex-wrap:wrap;
+  gap:12px 14px; margin-top:clamp(24px,3.4vw,38px); max-width:100%;
+}
+.book-ctrl .icon-btn{width:46px; height:46px; background:var(--card)}
+.book-ctrl .icon-btn[disabled]{opacity:.32; cursor:not-allowed; transform:none}
+.book-pips{display:flex; gap:7px; align-items:center}
+.pip{width:8px; height:8px; border-radius:50%; background:var(--line); transition:all .4s var(--ease)}
+.pip.on{background:var(--amber); width:26px; border-radius:99px}
+.book-hint{margin-top:14px; font-size:.79rem; color:var(--ink-3); text-align:center}
+.book-hint kbd{
+  font-family:inherit; font-size:.72rem; font-weight:700; padding:2px 7px; border-radius:6px;
+  border:1px solid var(--line); background:var(--card); color:var(--ink-2);
+}
+
+/* single-page mode on narrow screens */
+@media (max-width:820px){
+  .book-stage{perspective:1800px}
+  .book{aspect-ratio:.76/1; transform:none !important}
+  .book-base, .book-spine{display:none}
+  .leaf{left:0; width:100%; transform-origin:center center; transition:opacity .45s var(--ease), transform .55s var(--ease)}
+  .leaf.flipped{transform:none}
+  .face{border-radius:14px !important; border:1px solid var(--line) !important}
+  .face::after{display:none !important}
+  .leaf .face.front, .leaf .face.back{transform:none; backface-visibility:visible; -webkit-backface-visibility:visible}
+  .m-page{position:absolute; inset:0; opacity:0; pointer-events:none; transform:rotateY(14deg) scale(.96); transition:opacity .45s var(--ease), transform .55s var(--ease)}
+  .m-page.show{opacity:1; pointer-events:auto; transform:none}
+}
+
+/* ============================================================
+   TIMELINE / WORK
+   ============================================================ */
+.tl{border-top:1px solid var(--line)}
+.tl-row{
+  display:grid; grid-template-columns:170px 1fr auto; gap:clamp(14px,3vw,40px); align-items:start;
+  padding:clamp(22px,3vw,34px) 0; border-bottom:1px solid var(--line);
+  transition:background .4s var(--ease), padding-inline .4s var(--ease);
+}
+.tl-row:hover{background:var(--card); padding-inline:clamp(10px,2vw,22px)}
+.tl-when{font-size:.83rem; font-weight:700; color:var(--ink-3); letter-spacing:.01em; padding-top:5px}
+.tl-what h3{font-size:clamp(1.05rem,2vw,1.42rem); font-weight:800; letter-spacing:-.03em}
+.tl-what .org{font-size:.9rem; color:var(--amber); font-weight:700; margin:4px 0 9px}
+.tl-what p{margin:0; color:var(--ink-2); font-size:.93rem; max-width:62ch}
+.tl-tag{
+  font-size:.72rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase;
+  padding:6px 13px; border-radius:var(--r-pill); border:1px solid var(--line); color:var(--ink-3); white-space:nowrap;
+}
+@media (max-width:760px){
+  .tl-row{grid-template-columns:1fr; gap:8px}
+  .tl-tag{justify-self:start}
+}
+
+/* ============================================================
+   CONTACT
+   ============================================================ */
+/* the contact card is a dark panel in BOTH themes, so its text is fixed light,
+   not var(--paper), which flips dark and made this section invisible in dark mode */
+.contact{background:#171310; color:#F4EFE7; border-radius:clamp(24px,4vw,44px); padding:clamp(38px,6vw,84px); position:relative; overflow:hidden; border:1px solid #2C2721}
+.contact .eyebrow{color:#B7AE9F}
+.contact .h-sec{color:#FBF7F0}
+.contact .lede{color:#CFC6B8}
+.contact-glow{
+  position:absolute; right:-12%; top:-38%; width:60%; aspect-ratio:1; pointer-events:none;
+  background:radial-gradient(closest-side, rgba(242,169,59,.34), transparent 70%); filter:blur(6px);
+}
+.contact-inner{position:relative; z-index:2; display:grid; grid-template-columns:1.15fr .85fr; gap:clamp(28px,5vw,64px); align-items:center}
+@media (max-width:860px){ .contact-inner{grid-template-columns:1fr} }
+.contact-list{display:grid; gap:2px}
+.contact-list a{
+  display:flex; align-items:center; justify-content:space-between; gap:16px;
+  padding:17px 4px; border-bottom:1px solid rgba(251,247,240,.16); font-weight:600; font-size:.98rem;
+  transition:padding-inline .35s var(--ease), color .3s;
+}
+.contact-list a:hover{padding-inline:12px 0; color:var(--amber)}
+.contact-list span:first-child{color:#9A9184; font-size:.76rem; letter-spacing:.14em; text-transform:uppercase; font-weight:700; min-width:78px}
+.contact-list span:last-child{margin-left:auto}
+
+/* footer */
+.foot{padding:40px 0; border-top:1px solid var(--line); display:flex; flex-wrap:wrap; gap:16px; justify-content:space-between; align-items:center; font-size:.84rem; color:var(--ink-3)}
+.foot a:hover{color:var(--ink)}
+
+/* ============================================================
+   REVEAL
+   ============================================================ */
+.rv{opacity:0; transform:translateY(26px); transition:opacity .85s var(--ease), transform .85s var(--ease)}
+.rv.in{opacity:1; transform:none}
+.rv[data-d="1"]{transition-delay:.09s} .rv[data-d="2"]{transition-delay:.18s}
+.rv[data-d="3"]{transition-delay:.27s} .rv[data-d="4"]{transition-delay:.36s}
+
+/* progress bar */
+.progress{position:fixed; top:0; left:0; height:2px; background:var(--amber); z-index:200; width:0; transition:width .12s linear}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms !important; animation-iteration-count:1 !important; transition-duration:.01ms !important}
+  html{scroll-behavior:auto}
+  .rv{opacity:1; transform:none}
+}
+
+@media print{
+  .nav,.ticker,.hero,.marquee,.book-ctrl,.book-hint,.contact,.foot,.drawer,.progress{display:none !important}
+  .book,.leaf{position:static !important; transform:none !important; width:100% !important; aspect-ratio:auto !important}
+  .face{position:static !important; transform:none !important; backface-visibility:visible !important; border:0 !important; page-break-after:always; padding:0 0 24px !important}
+  .face::after{display:none !important}
+  body{background:#fff; color:#000}
+}
+</style>
+</head>
+<body>
+
+<div class="progress" id="progress"></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="brand" href="#top">Samuel <b>Ijeluola.</b></a>
+    <nav class="navlinks" id="navlinks">
+      <a href="#top">Home</a>
+      <a href="#services">Services</a>
+      <a href="#skills">Skills</a>
+      <a href="#cv">CV</a>
+      <a href="#work">Work</a>
+    </nav>
+    <div class="navtools">
+      <button class="icon-btn" id="theme" aria-label="Toggle dark mode">
+        <svg class="sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.6M12 19.4V22M4.2 4.2l1.9 1.9M17.9 17.9l1.9 1.9M2 12h2.6M19.4 12H22M4.2 19.8l1.9-1.9M17.9 6.1l1.9-1.9"/></svg>
+        <svg class="moon" viewBox="0 0 24 24"><path d="M20.5 14.6A8.6 8.6 0 1 1 9.4 3.5a7 7 0 0 0 11.1 11.1Z"/></svg>
+      </button>
+      <button class="icon-btn burger" id="burger" aria-label="Open menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <a class="btn btn-primary" href="#contact">Contact</a>
+    </div>
+  </div>
+</header>
+
+<div class="drawer" id="drawer">
+  <button class="icon-btn close" id="drawerClose" aria-label="Close menu">
+    <svg viewBox="0 0 24 24" style="width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+  <a href="#top">Home</a>
+  <a href="#services">Services</a>
+  <a href="#skills">Skills</a>
+  <a href="#cv">CV</a>
+  <a href="#work">Work</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<!-- ============ TICKER ============ -->
+<div class="ticker">
+  <div class="wrap">
+    <b>Front-line IT support &amp; 13+ years teaching English.</b> Antalya-based, available on-site or remote. <a href="#services">See what I do →</a>
+  </div>
+</div>
+
+<!-- ============ HERO ============ -->
+<main id="top">
+<section class="hero">
+  <div class="hero-glow"></div>
+  <div class="hero-grid"></div>
+  <div class="wrap hero-inner">
+
+    <div class="hero-status rv"><span class="dot"></span> Available for new roles &amp; clients · Antalya or remote</div>
+
+    <div class="hero-stage">
+      <div class="hero-name rv" data-d="1">
+        <h1 class="h-mega">I am<br>Samuel</h1>
+      </div>
+
+      <div class="portrait-col rv" data-d="2">
+        <span class="chip c1"><i></i>Active Directory</span>
+        <span class="chip c2"><i></i>Windows Server</span>
+        <span class="chip c3"><i></i>Linux</span>
+        <span class="chip c4"><i></i>Networking</span>
+        <span class="chip c5"><i></i>Cambridge</span>
+        <span class="chip c6"><i></i>TEFL</span>
+        <div class="portrait-wrap" id="pwrap">
+          <div class="portrait-halo"></div>
+          <div class="portrait-arc"></div>
+          <div class="portrait" id="portrait">
+            <div class="portrait-fallback" id="pfall">
+              <div>
+                <div class="mono">SI</div>
+                <small>Save your photo as<br><code>assets/samuel.png</code></small>
+              </div>
+            </div>
+            <img id="portraitImg" width="1200" height="1200" fetchpriority="high" decoding="async"
+                 alt="Samuel Olorunfemi Ijeluola, IT Support Engineer and Educator" style="display:none">
+            <div class="portrait-rim"></div>
+            <div class="portrait-grain"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-role rv" data-d="3">
+        <p class="hero-side">13+ years in <b>IT support</b> and <b>English education</b>. Certified Scrum Master, now training toward cloud &amp; AI.</p>
+        <h2 class="h-mega">IT<br>Support<br>Engineer</h2>
+      </div>
+    </div>
+
+    <div class="hero-cta rv" data-d="4">
+      <a class="btn btn-accent" href="#contact">Get in touch <span class="arw">→</span></a>
+      <a class="btn btn-ghost" href="#cv">Flip through my CV</a>
+    </div>
+    <p class="hero-scroll">See my work <span>↓</span></p>
+  </div>
+</section>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track" id="mq"></div>
+</div>
+
+<!-- ============ METRICS ============ -->
+<section class="metrics">
+  <div class="metric rv"><div class="num">13<em>+</em></div><p>Years across IT support and English-language education</p></div>
+  <div class="metric rv" data-d="1"><div class="num">50<em>+</em></div><p>Wincor &amp; NCR ATMs kept running across 15+ bank branches</p></div>
+  <div class="metric rv" data-d="2"><div class="num">200<em>+</em></div><p>Active Directory accounts migrated with zero access lost</p></div>
+  <div class="metric rv" data-d="3"><div class="num">80<em>%+</em></div><p>First-call resolution rate on front-line support</p></div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="sec" id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow rv">What I do</div>
+      <h2 class="h-sec rv" data-d="1">What I can actually <span class="serif-i">help you with</span>.</h2>
+      <p class="lede rv" data-d="2">Two disciplines I've spent real years in: keeping IT running and teaching English, plus the Agile certifications around them. The last two cards are honest about where I'm still learning.</p>
+    </div>
+
+    <div class="grid-3">
+      <article class="card rv">
+        <div class="n">01</div>
+        <h3 class="h-card">IT Support Engineering</h3>
+        <p>My core. Windows and Linux server administration, Active Directory, networking and end-user support at branch scale, from a banking ATM fleet to school campuses. It's the unglamorous layer that decides whether everything else works.</p>
+        <ul><li>Windows / Linux Server</li><li>Active Directory</li><li>M365</li><li>LAN/WAN</li><li>ITIL service desk</li></ul>
+      </article>
+      <article class="card rv" data-d="1">
+        <div class="n">02</div>
+        <h3 class="h-card">ESL / EFL &amp; Exam Prep</h3>
+        <p>TEFL-certified, 13+ years teaching English across Turkey and Nigeria. Cambridge, TOEFL and Oxford exam preparation, speaking clubs and Model UN coaching for children and adults.</p>
+        <ul><li>Cambridge exams</li><li>TOEFL</li><li>Curriculum design</li><li>MUN</li></ul>
+      </article>
+      <article class="card rv" data-d="2">
+        <div class="n">03</div>
+        <h3 class="h-card">Technical &amp; STEM Education</h3>
+        <p>Cambridge curriculum delivery plus STEM and coding programmes for ages 10 to 18: Scratch, Micro:bit, LEGO Education and Code.org, built to get young learners genuinely engaged.</p>
+        <ul><li>Cambridge</li><li>Scratch</li><li>Micro:bit</li><li>LEGO Education</li><li>Code.org</li></ul>
+      </article>
+      <article class="card rv">
+        <div class="n">04</div>
+        <h3 class="h-card">Agile Delivery &amp; Scrum</h3>
+        <p>Certified Scrum Master (PSM I, SAFe SASM, RSM). I facilitate refinement, planning and retrospectives, and help teams keep delivery honest and moving.</p>
+        <ul><li>Scrum</li><li>Kanban</li><li>SAFe</li><li>Jira</li><li>Confluence</li></ul>
+      </article>
+      <article class="card skill--training rv" data-d="1" style="--accent:#E8951F">
+        <div class="n" style="color:var(--accent)">05 · emerging</div>
+        <h3 class="h-card">Cloud &amp; DevOps <span style="font-weight:600;font-size:.8rem;color:var(--ink-3)">(in training)</span></h3>
+        <p>Where I'm upskilling, not yet where I've worked. Trained on AWS, Docker, Kubernetes and CI/CD through labs and coursework. I'm open to junior, support-level or collaborative projects while I build toward certification, and I'll always say so plainly rather than oversell it.</p>
+        <ul><li>AWS</li><li>Docker</li><li>Kubernetes</li><li>Jenkins</li><li>CI/CD</li></ul>
+      </article>
+      <article class="card skill--training rv" data-d="2" style="--accent:#7C6CF2">
+        <div class="n" style="color:var(--accent)">06 · emerging</div>
+        <h3 class="h-card">AI &amp; Automation <span style="font-weight:600;font-size:.8rem;color:var(--ink-3)">(exploring)</span></h3>
+        <p>An area I'm actively learning and building in, this very site included. Not a service I'd overstate, but I'm keen on hands-on, collaborative and learning-focused work with LLM tools and simple automation.</p>
+        <ul><li>Claude / LLM APIs</li><li>Prompting</li><li>Python</li><li>Automation</li></ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS & EXPERTISE ============ -->
+<section class="sec skills-sec" id="skills">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow rv">Skills &amp; expertise</div>
+      <h2 class="h-sec rv" data-d="1">Two I've proven. <span class="serif-i">One I'm growing into</span>.</h2>
+      <p class="lede rv" data-d="2">I've spent most of my career in two places: keeping IT systems running, and teaching English. Both are backed by real years and real certificates. Cloud and DevOps are where I'm heading next, trained but not yet certified, and I'd rather tell you that straight than dress it up.</p>
+    </div>
+
+    <div class="skills-grid">
+
+      <!-- IT SUPPORT -->
+      <article class="skill rv" style="--accent:#12A3A0">
+        <div class="skill-ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 3a4 4 0 0 0-4 4v3H6a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h2v-6"/><path d="M12 3a4 4 0 0 1 4 4v3h2a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-2v-6"/><path d="M16 18a3 3 0 0 1-3 3h-1"/></svg>
+        </div>
+        <h3>IT Support Engineering</h3>
+        <p class="yrs">CompTIA A+ · most of my career</p>
+        <p>Where I've spent the most years and done my strongest work. Windows and Linux servers, Active Directory, networking, LAN/WAN and end-user support, including a banking fleet where ATM downtime dropped from around 3 hours to under 1 per incident.</p>
+        <div class="meter">
+          <div class="meter-top"><b>Proficiency</b><span>Expert</span></div>
+          <div class="meter-rail"><div class="meter-fill" style="--lvl:93%"></div></div>
+        </div>
+        <ul><li>Windows Server</li><li>Linux</li><li>Active Directory</li><li>Networking</li><li>M365</li><li>ITIL</li></ul>
+        <div class="cred">
+          <svg viewBox="0 0 24 24"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4L12 19.3 7.2 16.7l.9-5.4-3.9-3.8 5.4-.8Z"/></svg>
+          <span><b>CompTIA A+</b> &amp; Microsoft Certified Professional</span>
+        </div>
+      </article>
+
+      <!-- ESL -->
+      <article class="skill rv" data-d="1" style="--accent:#7C6CF2">
+        <div class="skill-ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M3 5h8v13H3zM21 5h-8v13h8z"/><path d="M11 5c0-1 .8-2 2-2s2 1 2 2"/><path d="M6 9h3M6 12h3M15 9h3M15 12h3"/></svg>
+        </div>
+        <h3>ESL / EFL Teaching</h3>
+        <p class="yrs">TEFL Master Diploma · 13+ years</p>
+        <p>The skill I've spent longest earning. Cambridge, TOEFL and Oxford exam prep across Turkey and Nigeria, from age 5 to adult, with speaking clubs, Model UN, and curriculum built from scratch.</p>
+        <div class="meter">
+          <div class="meter-top"><b>Proficiency</b><span>Master</span></div>
+          <div class="meter-rail"><div class="meter-fill" style="--lvl:97%"></div></div>
+        </div>
+        <ul><li>Cambridge</li><li>TOEFL</li><li>Curriculum design</li><li>Exam prep</li><li>MUN</li></ul>
+        <div class="cred">
+          <svg viewBox="0 0 24 24"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4L12 19.3 7.2 16.7l.9-5.4-3.9-3.8 5.4-.8Z"/></svg>
+          <span><b>Master Diploma in TEFL</b> (Bridge)</span>
+        </div>
+      </article>
+
+      <!-- CLOUD / DEVOPS · in training, honestly marked -->
+      <article class="skill skill--training rv" data-d="2" style="--accent:#E8951F">
+        <span class="tag-train">In training</span>
+        <div class="skill-ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M4 15a4 4 0 0 1 .7-7.94 5.5 5.5 0 0 1 10.6-1.06A4.5 4.5 0 0 1 18 15Z"/><path d="M8 19l1.6-1.6M12 20v-3M16 19l-1.6-1.6"/></svg>
+        </div>
+        <h3>Cloud &amp; DevOps</h3>
+        <p class="yrs">Trained · not yet certified</p>
+        <p>The direction I'm building toward. I've trained on EC2, S3, IAM, Docker, Kubernetes and CI/CD tooling through hands-on labs and coursework. It's foundational knowledge I'm actively deepening, not yet a professional track record. When that changes, this card will say so.</p>
+        <div class="meter">
+          <div class="meter-top"><b>Proficiency</b><span>Foundational</span></div>
+          <div class="meter-rail"><div class="meter-fill" style="--lvl:42%"></div></div>
+        </div>
+        <ul><li>AWS</li><li>Docker</li><li>Kubernetes</li><li>Jenkins</li><li>Linux</li><li>CI/CD</li></ul>
+        <div class="cred">
+          <svg viewBox="0 0 24 24"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5Z"/><path d="M4 20.5A2.5 2.5 0 0 1 6.5 18H20"/></svg>
+          <span>Self-directed <b>coursework &amp; labs</b>, working toward AWS certification</span>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="creds rv" data-d="1">
+      <div class="creds-label">Verified credentials · certificates I actually hold</div>
+      <div class="creds-row">
+        <span class="cred-badge"><span class="tick"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></span>CompTIA A+ <small>Core 1 &amp; Core 2</small></span>
+        <span class="cred-badge"><span class="tick"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></span>Microsoft Certified <small>MCP · MCTS</small></span>
+        <span class="cred-badge"><span class="tick"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></span>Professional Scrum Master I <small>Scrum.org</small></span>
+        <span class="cred-badge"><span class="tick"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></span>SAFe Advanced Scrum Master <small>Scaled Agile</small></span>
+        <span class="cred-badge"><span class="tick"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></span>TEFL Master Diploma <small>Bridge</small></span>
+      </div>
+      <p class="cred-note">Original certificates available on request. AWS certification is in progress, and I'll add it here once it's earned, not before.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FLIPBOOK CV ============ -->
+<section class="sec book-sec" id="cv">
+  <div class="wrap book-shell">
+    <div class="sec-head" style="text-align:center; max-width:680px">
+      <div class="eyebrow rv" style="justify-content:center">The CV</div>
+      <h2 class="h-sec rv" data-d="1">Turn the <span class="serif-i">pages</span>.</h2>
+      <p class="lede rv" data-d="2">Thirteen years, four countries, two disciplines. Click the pages, drag them, or use the arrow keys.</p>
+    </div>
+
+    <div class="book-stage rv" data-d="2">
+      <div class="book" id="book">
+        <div class="book-base"></div>
+        <div class="book-spine"></div>
+
+        <!-- LEAF 1 -->
+        <div class="leaf" data-i="0">
+          <div class="face front cover">
+            <div>
+              <div class="pg-kicker">Curriculum Vitae</div>
+              <h3 class="pg-title">Samuel Olorunfemi Ijeluola</h3>
+              <p style="font-size:.9rem; margin-top:10px">IT Support Engineer · Educator · Scrum Master · learning Cloud &amp; AI</p>
+            </div>
+            <div style="display:flex; align-items:flex-end; justify-content:space-between; gap:16px">
+              <div style="font-size:.78rem; color:#9A9184; line-height:1.6">
+                Antalya, Turkey<br>sammyjel@gmail.com<br>+90 537 680 6299
+              </div>
+              <div class="seal">SI</div>
+            </div>
+            <span class="pg-num" style="color:#9A9184">Cover</span>
+          </div>
+          <div class="face back">
+            <div class="pg-kicker">01 · Profile</div>
+            <h3 class="pg-title">Who I am</h3>
+            <div class="pg-body">
+              <p>IT support engineer and educator with <b>13+ years</b> across two disciplines: keeping IT systems running, from a banking ATM fleet to school campuses, and teaching English as a foreign language internationally.</p>
+              <p>Strongest in Windows/Linux server administration, Active Directory, networking and end-user support, with measurable resolution-speed and first-call improvements in banking. TEFL Master Diploma with a long record of Cambridge, TOEFL and Oxford exam preparation.</p>
+              <p>Certified Scrum Master (PSM I, SAFe SASM), Microsoft Certified Professional and CompTIA A+. Currently training toward <b>cloud and AI</b> with AWS, Docker and CI/CD through labs and coursework, building genuine skill there without yet claiming production experience.</p>
+              <p>Equally comfortable rebuilding a domain controller and holding the attention of a room of eleven-year-olds, which, honestly, is the harder of the two.</p>
+              <div class="tagrow">
+                <span>English (Native)</span><span>Yoruba (Fluent)</span><span>Turkish (Basic)</span>
+              </div>
+            </div>
+            <span class="pg-num">01</span>
+          </div>
+        </div>
+
+        <!-- LEAF 2 -->
+        <div class="leaf" data-i="1">
+          <div class="face front">
+            <div class="pg-kicker">02 · Experience</div>
+            <h3 class="pg-title">Recent roles</h3>
+            <div class="pg-body">
+              <div class="job">
+                <h4>Cambridge Primary Subject Teacher</h4>
+                <div class="meta">Antalya TOPLUM School · Aug 2025 – Present</div>
+                <ul>
+                  <li>Teach English, Science and Mathematics on the Cambridge Primary curriculum.</li>
+                  <li>Design and timetable lesson plans aligned to Cambridge objectives across multiple concurrent classes.</li>
+                  <li>Own parent communication, attendance and performance tracking, and activity coordination.</li>
+                </ul>
+              </div>
+              <div class="job">
+                <h4>STEM &amp; English Instructor · Scrum Master</h4>
+                <div class="meta">Istek School, Konyaalti Campus · Aug 2019 – Aug 2025</div>
+                <ul>
+                  <li>Delivered EFL to students aged 10–18; prepared candidates for Cambridge, Oxford and TOEFL Junior.</li>
+                  <li>Built game-based STEM lessons with Scratch, Tinkercad, Micro:bit and Code.org.</li>
+                  <li>Served as Scrum Master for internal projects, facilitating planning, refinement and retrospectives.</li>
+                  <li>Provided day-to-day IT support across the campus: devices, accounts and classroom systems.</li>
+                  <li>Began self-training in cloud and DevOps tooling (AWS, Docker, CI/CD) through labs and coursework during this period.</li>
+                </ul>
+              </div>
+            </div>
+            <span class="pg-num">02</span>
+          </div>
+          <div class="face back">
+            <div class="pg-kicker">03 · Experience</div>
+            <h3 class="pg-title">Engineering &amp; delivery</h3>
+            <div class="pg-body">
+              <div class="job">
+                <h4>Scrum Master &amp; IT Support</h4>
+                <div class="meta">Saritay IT Consult &amp; IT Solutions · Jan 2016 – Jul 2022</div>
+                <ul>
+                  <li>Facilitated end-to-end delivery of e-commerce web projects on Agile principles as Scrum Master.</li>
+                  <li>Resolved 95%+ of Linux/Windows server tickets within SLA by building a reusable runbook library, cutting repeat escalations by around 40%.</li>
+                  <li>Automated routine system health checks in Shell, saving roughly 6 hours of manual monitoring per week.</li>
+                  <li>Handled user access management and quarterly security reviews; clean incident record throughout.</li>
+                  <li>Held sprint velocity above 85% each quarter across UAT and integration testing cycles.</li>
+                </ul>
+              </div>
+              <div class="job">
+                <h4>Scrum Master</h4>
+                <div class="meta">Naturevantage Health Resources Ltd., Nigeria · Jan 2014 – Dec 2015</div>
+                <ul>
+                  <li>Facilitated UI/UX-focused Agile projects for mobile and marketing platforms through to MVP delivery.</li>
+                  <li>Ran ideation, design-thinking and user-research workshops tied to business objectives.</li>
+                </ul>
+              </div>
+            </div>
+            <span class="pg-num">03</span>
+          </div>
+        </div>
+
+        <!-- LEAF 3 -->
+        <div class="leaf" data-i="2">
+          <div class="face front">
+            <div class="pg-kicker">04 · Experience</div>
+            <h3 class="pg-title">Foundations</h3>
+            <div class="pg-body">
+              <div class="job">
+                <h4>ATM / IT Support Analyst · IT Project Manager</h4>
+                <div class="meta">Intercontinental Bank Plc (acq. Access Bank), Nigeria · Jan 2008 – Mar 2012</div>
+                <ul>
+                  <li>Supported a fleet of 50+ Wincor and NCR ATMs; cut average downtime from ~3 hours to under 1 hour per incident.</li>
+                  <li>Deployed Windows Server 2003 / Linux workstations across 15+ branches with zero rollbacks.</li>
+                  <li>Rebuilt Active Directory post-acquisition, migrating 200+ accounts with no access disruption.</li>
+                  <li>Managed LAN and VSAT infrastructure across all branches; first-call resolution above 80%.</li>
+                  <li>Monitored NetApp storage and application servers at the primary Data Centre and DR Centre.</li>
+                </ul>
+              </div>
+              <div class="job">
+                <h4>EFL Teacher</h4>
+                <div class="meta">Sinav Koleji Muratpasa · 2016 – 2018 &nbsp;|&nbsp; Doğa Koleji · Dec 2012 – 2016</div>
+                <ul>
+                  <li>Taught EFL to grades 5–11 across speaking, listening, reading and writing.</li>
+                  <li>Prepared students for Cambridge Starters, Movers, Flyers and KET, plus Model UN conferences.</li>
+                </ul>
+              </div>
+            </div>
+            <span class="pg-num">04</span>
+          </div>
+          <div class="face back">
+            <div class="pg-kicker">05 · Credentials</div>
+            <h3 class="pg-title">Education &amp; certifications</h3>
+            <div class="pg-body">
+              <div class="job">
+                <h4>MBA, Business Management for Managers</h4>
+                <div class="meta">Istanbul Aydin University, Turkey · 2012 – 2017</div>
+              </div>
+              <div class="job">
+                <h4>HND, Computer Technology</h4>
+                <div class="meta">Federal University of Technology Akure (FUTA), Nigeria · 2001 – 2006</div>
+              </div>
+              <p style="font-weight:800; color:var(--ink); margin-top:14px">Certifications</p>
+              <div class="tagrow">
+                <span>CompTIA A+ (Core 1 &amp; Core 2)</span>
+                <span>Microsoft Certified Professional</span>
+                <span>MCTS: Windows Server 2008 Network Infrastructure</span>
+                <span>SAFe Advanced Scrum Master</span>
+                <span>Professional Scrum Master I</span>
+                <span>Registered Scrum Master</span>
+                <span>Master Diploma TEFL (Bridge)</span>
+                <span>AWS certification (in progress)</span>
+              </div>
+            </div>
+            <span class="pg-num">05</span>
+          </div>
+        </div>
+
+        <!-- LEAF 4 -->
+        <div class="leaf" data-i="3">
+          <div class="face front">
+            <div class="pg-kicker">06 · Toolkit</div>
+            <h3 class="pg-title">Technical skills</h3>
+            <div class="pg-body">
+              <dl class="kv">
+                <dt>Systems</dt><dd>Linux &amp; Windows Server, Active Directory, M365, LAN/WAN, VSAT, ATM hardware</dd>
+                <dt>Support</dt><dd>ITIL service desk, end-user support, hardware, networking, ticketing &amp; runbooks</dd>
+                <dt>Agile</dt><dd>Scrum, Kanban, SAFe, Lean, Jira, Confluence</dd>
+                <dt>Education</dt><dd>Cambridge curriculum, TEFL, Scratch, Tinkercad, Micro:bit, Code.org, LEGO Education</dd>
+                <dt>Scripting</dt><dd>Bash / Shell, Git, basic Python</dd>
+                <dt style="color:var(--amber)">In training</dt><dd>AWS (EC2, S3, IAM), Docker, Kubernetes, CI/CD, Claude / LLM tooling. Labs &amp; coursework, not yet production.</dd>
+              </dl>
+            </div>
+            <span class="pg-num">06</span>
+          </div>
+          <div class="face back cover">
+            <div>
+              <div class="pg-kicker">07 · Let's talk</div>
+              <h3 class="pg-title">End of the book.<br>Start of the project?</h3>
+              <p style="font-size:.88rem; margin-top:12px">If any of this maps to a problem you're carrying, the fastest next step is a conversation.</p>
+            </div>
+            <div>
+              <div style="font-size:.82rem; color:#CFC6B8; line-height:1.9">
+                sammyjel@gmail.com<br>
+                +90 537 680 6299<br>
+                linkedin.com/in/samuel-ijeluola-03922a52<br>
+                github.com/sammyjel
+              </div>
+              <a class="btn btn-accent" href="#contact" style="margin-top:18px">Get in touch <span class="arw">→</span></a>
+            </div>
+            <span class="pg-num" style="color:#9A9184">07</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="book-ctrl">
+      <button class="icon-btn" id="prev" aria-label="Previous page">
+        <svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg>
+      </button>
+      <div class="book-pips" id="pips" role="tablist" aria-label="CV pages"></div>
+      <button class="icon-btn" id="next" aria-label="Next page">
+        <svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg>
+      </button>
+      <button class="btn btn-ghost" id="printCv" style="margin-left:8px">Save as PDF</button>
+    </div>
+    <p class="book-hint">Click a page to turn it · drag to flip · <kbd>←</kbd> <kbd>→</kbd> keys</p>
+  </div>
+</section>
+
+<!-- ============ WORK / TIMELINE ============ -->
+<section class="sec" id="work">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow rv">Selected work</div>
+      <h2 class="h-sec rv" data-d="1">Experience &amp; <span class="serif-i">track record</span>.</h2>
+    </div>
+    <div class="tl">
+      <div class="tl-row rv">
+        <div class="tl-when">2025 – Present</div>
+        <div class="tl-what">
+          <h3>Cambridge Primary Subject Teacher</h3>
+          <div class="org">Antalya TOPLUM School</div>
+          <p>English, Science and Mathematics on the Cambridge Primary curriculum, with full ownership of planning, timetabling, assessment and parent communication.</p>
+        </div>
+        <div class="tl-tag">Education</div>
+      </div>
+      <div class="tl-row rv">
+        <div class="tl-when">2019 – 2025</div>
+        <div class="tl-what">
+          <h3>STEM &amp; English Instructor · Scrum Master</h3>
+          <div class="org">Istek School, Konyaalti Campus</div>
+          <p>EFL and game-based STEM programmes for ages 10–18, Scrum Master on internal projects, and day-to-day campus IT support. Where I also began self-training in cloud and DevOps tooling.</p>
+        </div>
+        <div class="tl-tag">Education + IT</div>
+      </div>
+      <div class="tl-row rv">
+        <div class="tl-when">2016 – 2022</div>
+        <div class="tl-what">
+          <h3>Scrum Master &amp; IT Support</h3>
+          <div class="org">Saritay IT Consult &amp; IT Solutions</div>
+          <p>Scrum Master on e-commerce projects, plus front-line server support. Built the runbook library that dropped repeat escalations ~40%, and automated health checks worth ~6 hours a week.</p>
+        </div>
+        <div class="tl-tag">Support + Agile</div>
+      </div>
+      <div class="tl-row rv">
+        <div class="tl-when">2008 – 2012</div>
+        <div class="tl-what">
+          <h3>ATM / IT Support Analyst · IT Project Manager</h3>
+          <div class="org">Intercontinental Bank Plc (acq. Access Bank)</div>
+          <p>50+ ATMs, 15+ branches, one post-acquisition Active Directory rebuild moving 200+ accounts without a single locked-out user. Downtime per incident cut from ~3 hours to under 1.</p>
+        </div>
+        <div class="tl-tag">Infrastructure</div>
+      </div>
+      <div class="tl-row rv">
+        <div class="tl-when">Project</div>
+        <div class="tl-what">
+          <h3>LEGO Education × Micro:bit: Gamified STEM</h3>
+          <div class="org">Independent programme design</div>
+          <p>Designed and ran pull-robot activities combining LEGO Education kits with Micro:bit gamification to build teamwork and computational thinking. Owned timelines, participant comms and feedback loops.</p>
+        </div>
+        <div class="tl-tag">STEM</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="sec" id="contact" style="padding-top:0">
+  <div class="wrap">
+    <div class="contact rv">
+      <div class="contact-glow"></div>
+      <div class="contact-inner">
+        <div>
+          <div class="eyebrow" style="color:#9A9184">Contact</div>
+          <h2 class="h-sec" style="margin:16px 0 18px">Let's keep your systems, or your students, <span class="serif-i">moving</span>.</h2>
+          <p class="lede">IT support, English teaching, exam prep or Agile facilitation. Antalya-based, on-site or remote worldwide, and open to junior cloud work as I train toward it. Tell me what you need.</p>
+          <a class="btn btn-accent" href="mailto:sammyjel@gmail.com?subject=Project%20enquiry" style="margin-top:26px">Email me <span class="arw">→</span></a>
+        </div>
+        <div class="contact-list">
+          <a href="mailto:sammyjel@gmail.com"><span>Email</span><span>sammyjel@gmail.com</span></a>
+          <a href="tel:+905376806299"><span>Phone</span><span>+90 537 680 6299</span></a>
+          <a href="https://www.linkedin.com/in/samuel-ijeluola-03922a52" target="_blank" rel="noopener"><span>LinkedIn</span><span>/samuel-ijeluola →</span></a>
+          <a href="https://github.com/sammyjel" target="_blank" rel="noopener"><span>GitHub</span><span>/sammyjel →</span></a>
+          <a href="#cv"><span>Location</span><span>Antalya, Turkey</span></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="foot">
+      <div>© <span id="yr"></span> Samuel Olorunfemi Ijeluola. Built by hand.</div>
+      <div style="display:flex; gap:20px">
+        <a href="#top">Back to top ↑</a>
+        <a href="mailto:sammyjel@gmail.com">sammyjel@gmail.com</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<script>
+(function(){
+  "use strict";
+  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  /* ---------- year ---------- */
+  document.getElementById("yr").textContent = new Date().getFullYear();
+
+  /* ---------- theme ---------- */
+  var root = document.documentElement;
+  var stored = null;
+  try { stored = localStorage.getItem("si-theme"); } catch(e){}
+  var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  root.setAttribute("data-theme", stored || (prefersDark ? "dark" : "light"));
+  document.getElementById("theme").addEventListener("click", function(){
+    var next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+    root.setAttribute("data-theme", next);
+    try { localStorage.setItem("si-theme", next); } catch(e){}
+  });
+
+  /* ---------- portrait ----------
+     Tries a list of likely filenames so the photo works whatever it gets saved as.
+     Until one loads, the SI monogram placeholder stays put. ------------------ */
+  var pimg  = document.getElementById("portraitImg");
+  var pwrap = document.getElementById("pwrap");
+  var candidates = [
+    "assets/samuel.jpg",  "assets/samuel.png",  "assets/samuel.jpeg", "assets/samuel.webp",
+    "assets/profile.png", "assets/profile.jpg", "assets/photo.png",   "assets/photo.jpg"
+  ];
+  var ci = 0;
+  function tryNext(){
+    if (ci >= candidates.length) return;   /* nothing found, keep the placeholder */
+    pimg.src = candidates[ci++];
+  }
+  pimg.addEventListener("load", function(){
+    if (!pimg.naturalWidth) return tryNext();
+    pimg.style.display = "block";
+    pwrap.classList.add("has-photo");
+  });
+  pimg.addEventListener("error", tryNext);
+  tryNext();
+
+  /* gentle pointer parallax on the portrait, skipped for reduced-motion */
+  if (!reduce && window.matchMedia("(pointer:fine)").matches){
+    var pf = document.getElementById("portrait");
+    var hero = document.querySelector(".hero");
+    hero.addEventListener("pointermove", function(e){
+      var r = hero.getBoundingClientRect();
+      var nx = (e.clientX - r.left) / r.width  - .5;
+      var ny = (e.clientY - r.top)  / r.height - .5;
+      pf.style.setProperty("--px", (nx * 14).toFixed(2) + "px");
+      pf.style.setProperty("--py", (ny * 10).toFixed(2) + "px");
+    });
+    hero.addEventListener("pointerleave", function(){
+      pf.style.setProperty("--px","0px"); pf.style.setProperty("--py","0px");
+    });
+  }
+
+  /* ---------- nav ---------- */
+  var nav = document.getElementById("nav");
+  var progress = document.getElementById("progress");
+  function onScroll(){
+    nav.classList.toggle("stuck", window.scrollY > 12);
+    var h = document.documentElement.scrollHeight - window.innerHeight;
+    progress.style.width = (h > 0 ? (window.scrollY / h) * 100 : 0) + "%";
+  }
+  window.addEventListener("scroll", onScroll, {passive:true});
+  onScroll();
+
+  /* scroll-spy */
+  var links = [].slice.call(document.querySelectorAll("#navlinks a"));
+  var targets = links.map(function(a){ return document.querySelector(a.getAttribute("href")); }).filter(Boolean);
+  if ("IntersectionObserver" in window && targets.length){
+    var spy = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if (!en.isIntersecting) return;
+        links.forEach(function(a){
+          a.classList.toggle("active", a.getAttribute("href") === "#" + en.target.id);
+        });
+      });
+    }, {rootMargin:"-45% 0px -50% 0px"});
+    targets.forEach(function(t){ spy.observe(t); });
+  }
+
+  /* ---------- drawer ---------- */
+  var drawer = document.getElementById("drawer");
+  var burger = document.getElementById("burger");
+  function setDrawer(open){
+    drawer.classList.toggle("open", open);
+    burger.setAttribute("aria-expanded", String(open));
+    document.body.style.overflow = open ? "hidden" : "";
+  }
+  burger.addEventListener("click", function(){ setDrawer(true); });
+  document.getElementById("drawerClose").addEventListener("click", function(){ setDrawer(false); });
+  drawer.addEventListener("click", function(e){ if (e.target.tagName === "A") setDrawer(false); });
+
+  /* ---------- marquee ---------- */
+  var stack = ["IT Support","Windows Server","Linux","Active Directory","Networking","M365","ITIL","Scrum","Cambridge","TOEFL","TEFL","Jira","Bash","Learning: AWS","Learning: Docker","Learning: CI/CD"];
+  var mq = document.getElementById("mq");
+  var html = stack.map(function(s){ return '<span class="marquee-item">' + s + '</span>'; }).join("");
+  mq.innerHTML = html + html; /* duplicated for the seamless -50% loop */
+
+  /* ---------- reveal ---------- */
+  var rvs = [].slice.call(document.querySelectorAll(".rv"));
+  if (reduce || !("IntersectionObserver" in window)){
+    rvs.forEach(function(el){ el.classList.add("in"); });
+  } else {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if (en.isIntersecting){ en.target.classList.add("in"); io.unobserve(en.target); }
+      });
+    }, {threshold:.14, rootMargin:"0px 0px -8% 0px"});
+    rvs.forEach(function(el){ io.observe(el); });
+  }
+
+  /* ---------- card spotlight ---------- */
+  document.querySelectorAll(".card").forEach(function(c){
+    c.addEventListener("pointermove", function(e){
+      var r = c.getBoundingClientRect();
+      c.style.setProperty("--mx", (e.clientX - r.left) + "px");
+      c.style.setProperty("--my", (e.clientY - r.top) + "px");
+    });
+  });
+
+  /* ============================================================
+     FLIPBOOK
+     ============================================================ */
+  var book   = document.getElementById("book");
+  var leaves = [].slice.call(book.querySelectorAll(".leaf"));
+  var N      = leaves.length;
+  var pips   = document.getElementById("pips");
+  var prevBtn= document.getElementById("prev");
+  var nextBtn= document.getElementById("next");
+  var idx    = 0;                       /* leaves currently flipped: 0..N */
+  var narrow = function(){ return window.matchMedia("(max-width:820px)").matches; };
+
+  /* stacking: unflipped leaves count down from the top, flipped ones count up */
+  function restack(){
+    leaves.forEach(function(l, i){
+      l.style.zIndex = i < idx ? String(10 + i) : String(10 + N - i);
+    });
+  }
+
+  /* narrow screens read as a single-page deck: 2 faces per leaf = 2N pages */
+  function renderNarrow(){
+    var page = idx * 2;                 /* approximate mapping into the face deck */
+    var faces = [];
+    leaves.forEach(function(l){
+      faces.push(l.querySelector(".face.front"));
+      faces.push(l.querySelector(".face.back"));
+    });
+    faces.forEach(function(f, i){
+      f.classList.add("m-page");
+      f.classList.toggle("show", i === Math.min(page, faces.length - 1));
+    });
+    leaves.forEach(function(l, i){ l.style.zIndex = String(i === Math.min(idx, N-1) ? 20 : 10); });
+  }
+
+  function render(){
+    if (narrow()){
+      book.classList.remove("opened");
+      renderNarrow();
+    } else {
+      leaves.forEach(function(l){ l.querySelector(".face.front").classList.remove("m-page","show");
+                                  l.querySelector(".face.back").classList.remove("m-page","show"); });
+      leaves.forEach(function(l, i){ l.classList.toggle("flipped", i < idx); });
+      book.classList.toggle("opened", idx > 0);
+      restack();
+    }
+    prevBtn.disabled = idx === 0;
+    nextBtn.disabled = idx === N;
+    [].slice.call(pips.children).forEach(function(p, i){ p.classList.toggle("on", i === idx); });
+  }
+
+  function go(n){
+    var clamped = Math.max(0, Math.min(N, n));
+    if (clamped === idx) return;
+    idx = clamped;
+    render();
+  }
+
+  /* pips */
+  for (var p = 0; p <= N; p++){
+    (function(i){
+      var b = document.createElement("button");
+      b.className = "pip";
+      b.setAttribute("role","tab");
+      b.setAttribute("aria-label", "Go to spread " + (i + 1));
+      b.addEventListener("click", function(){ go(i); });
+      pips.appendChild(b);
+    })(p);
+  }
+
+  prevBtn.addEventListener("click", function(){ go(idx - 1); });
+  nextBtn.addEventListener("click", function(){ go(idx + 1); });
+
+  /* click a page to turn it: left half goes back, right half goes forward */
+  book.addEventListener("click", function(e){
+    if (e.target.closest("a, button")) return;      /* let links in pages work */
+    var r = book.getBoundingClientRect();
+    if (narrow()) { go(idx + 1 > N ? 0 : idx + 1); return; }
+    go(e.clientX - r.left < r.width / 2 ? idx - 1 : idx + 1);
+  });
+
+  /* keyboard, only while the book is on screen */
+  var bookVisible = false;
+  if ("IntersectionObserver" in window){
+    new IntersectionObserver(function(en){ bookVisible = en[0].isIntersecting; }, {threshold:.3})
+      .observe(document.getElementById("cv"));
+  }
+  window.addEventListener("keydown", function(e){
+    if (!bookVisible) return;
+    if (e.key === "ArrowRight"){ e.preventDefault(); go(idx + 1); }
+    if (e.key === "ArrowLeft"){ e.preventDefault(); go(idx - 1); }
+  });
+
+  /* drag / swipe to flip */
+  var sx = null, sy = null, dragging = false;
+  book.addEventListener("pointerdown", function(e){ sx = e.clientX; sy = e.clientY; dragging = true; });
+  window.addEventListener("pointerup", function(e){
+    if (!dragging || sx === null) return;
+    dragging = false;
+    var dx = e.clientX - sx, dy = e.clientY - sy;
+    sx = sy = null;
+    if (Math.abs(dx) < 55 || Math.abs(dx) < Math.abs(dy)) return;   /* not a horizontal drag */
+    go(dx < 0 ? idx + 1 : idx - 1);
+  });
+
+  var lastNarrow = narrow();
+  window.addEventListener("resize", function(){
+    if (narrow() !== lastNarrow){ lastNarrow = narrow(); render(); }
+  });
+
+  render();
+
+  document.getElementById("printCv").addEventListener("click", function(){ window.print(); });
+})();
+</script>
+</body>
+</html>
