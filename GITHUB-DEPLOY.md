@@ -1,21 +1,34 @@
-# Publish this site to your GitHub (one-time)
+# Push this site to your GitHub (one-time)
 
-Your site is already a git repo with everything committed. I couldn't push for you because
-GitHub needs an interactive login I can't do in the background. Run these **4 commands**
-once in PowerShell — copy-paste the whole block:
+Everything is already done for you:
+- the folder is a git repo with all changes committed
+- the remote `origin` is already set to `https://github.com/sammyjel/samuel-portfolio.git`
+- the branch is `main`
+
+I could not run the final push myself, because GitHub needs an interactive login
+(a browser popup) that the background environment blocks. So run this in **your own**
+PowerShell window — it will open a browser the first time to log you in:
 
 ```powershell
 cd C:\Users\sammy\Downloads\samuel-portfolio
+git push -u origin main
+```
 
-# 1. Log in (opens your browser; choose: GitHub.com -> HTTPS -> Login with a web browser)
-gh auth login
+If a login window appears, sign in to GitHub and allow it, then the push completes.
 
-# 2. Create the repo under your account and push everything
-gh repo create samuel-portfolio --public --source=. --remote=origin --push
+### If `git push` says "Authentication failed" or hangs
+Log in with the GitHub CLI first, then push:
+```powershell
+gh auth login          # choose: GitHub.com -> HTTPS -> Login with a web browser
+git push -u origin main
+```
 
-# 3. Turn on GitHub Pages (serve the site from the main branch)
+## Then turn on GitHub Pages (makes it a live website)
+After the push succeeds:
+```powershell
 gh api -X POST "repos/sammyjel/samuel-portfolio/pages" -f "source[branch]=main" -f "source[path]=/"
 ```
+Or on the website: your repo -> **Settings -> Pages -> Source: Deploy from a branch -> main -> /(root) -> Save**.
 
 **Your live GitHub Pages URL will be:**
 ```
