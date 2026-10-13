@@ -1,3 +1,4 @@
+
 # Samuel Ijeluola — Portfolio
 
 Single-file, dependency-free personal site. Open `index.html` in any browser; there is no build step.
